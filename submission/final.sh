@@ -187,7 +187,7 @@ echo "Using internal key: $INTERNAL_KEY"
 SIMPLE_DESCRIPTOR="tr($INTERNAL_KEY)"
 echo "Simple descriptor: $SIMPLE_DESCRIPTOR"
 
-# STUDENT TASK: Get a proper descriptor with checksum
+# STUDENT TASK: Get a proper descriptor with checksumm
 # WRITE YOUR SOLUTION BELOW:
 TAPROOT_DESCRIPTOR=$(bitcoin-cli -regtest getdescriptorinfo "$SIMPLE_DESCRIPTOR" | jq -r '.descriptor')
 check_cmd "Descriptor generation"
